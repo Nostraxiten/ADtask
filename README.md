@@ -1,76 +1,72 @@
-# ADTask — Gestor Inteligente de Procesos para Windows
-
-> Mata lo que sobra. Deja lo que importa.
-
+# ADTask — Intelligent Process Manager for Windows
+ 
+> Kill what's wasting resources. Keep what matters.
+ 
 ---
+ 
+## What is this?
 
-## ¿Qué es esto?
-
-**ADTask** es una herramienta ejecutable para Windows (.exe) diseñada para liberar CPU y memoria RAM de forma rápida y segura. Está pensada para usuarios que quieren control total sobre los procesos del sistema, ya sea de forma manual e informada, o delegando la decisión a un motor de limpieza inteligente.
-
-Sin instalación. Sin dependencias. Doble clic y listo.
-
+<img width="700" height="529" alt="Captura de pantalla 2026-05-27 165530" src="https://github.com/user-attachments/assets/5065b3b4-a572-4b07-855f-2b51c9dc81d9" />
+ 
+**ADTask** is a Windows executable (.exe) designed to free up CPU and RAM quickly and safely. Built for users who want full control over their system processes, either manually with detailed information, or by letting the smart cleanup engine handle everything automatically.
+ 
+No installation. No dependencies. Just double-click and run.
+ 
 ---
-
-## Características principales
-
-### Modo 1 — Borrado Manual con Explicación
-- Lista todos los procesos activos del sistema en tiempo real.
-- Muestra para cada proceso:
-  - Nombre del ejecutable
-  - Descripción legible (qué es y para qué sirve)
-  - Uso actual de CPU y RAM
-  - Estado: activo / suspendido / segundo plano
-- El usuario decide qué procesos matar de forma individual e informada.
-- Ideal para usuarios que quieren saber exactamente qué están eliminando.
-
+ 
+## Features
+ 
+### Mode 1 — Manual Termination with Explanation
+- Lists all active system processes in real time.
+- Displays for each process:
+  - Executable name
+  - Human-readable description (what it is and what it does)
+  - Current CPU and RAM usage
+  - Status: active / suspended / background
+- The user decides which processes to kill individually and with full knowledge.
+- Perfect for users who want to know exactly what they are terminating.
 ---
-
-### Modo 2 — Limpieza Inteligente (Smart Kill)
-- Analiza automáticamente todos los procesos en ejecución.
-- Clasifica y termina procesos según criterios de seguridad y eficiencia:
-  - Procesos maliciosos o sospechosos detectados por patrones conocidos.
-  - Procesos inactivos que consumen recursos sin estar en uso activo.
-  - Procesos no críticos como navegadores, aplicaciones secundarias y servicios opcionales.
-- Nunca toca procesos esenciales del sistema operativo:
-  - `explorer.exe`, `svchost.exe`, `lsass.exe`, `winlogon.exe`, y similares.
-- Resultado: reducción significativa de uso de CPU y RAM en segundos.
-
+ 
+### Mode 2 — Smart Cleanup (Smart Kill)
+- Automatically analyzes all running processes.
+- Classifies and terminates processes based on safety and efficiency criteria:
+  - Malicious or suspicious processes detected by known patterns.
+  - Idle processes consuming resources without active use.
+  - Non-critical processes such as browsers, secondary applications, and optional services.
+- Never touches essential operating system processes:
+  - `explorer.exe`, `svchost.exe`, `lsass.exe`, `winlogon.exe`, and similar.
+- Result: significant reduction in CPU and RAM usage within seconds.
 ---
-
-## Seguridad
-
-- El programa no modifica archivos del sistema, solo gestiona procesos en ejecución.
-- La lista de procesos protegidos está integrada directamente en el ejecutable.
-- El Modo Inteligente aplica una lógica de lista blanca: todo lo crítico está excluido por defecto.
-- Se recomienda ejecutar como **Administrador** para acceso completo a todos los procesos.
-
+ 
+## Security
+ 
+- The program does not modify any system files — it only manages running processes.
+- The protected process list is built directly into the executable.
+- Smart Kill applies a whitelist logic: everything critical is excluded by default.
+- Running as **Administrator** is recommended for full access to all processes.
 ---
-
-## Requisitos
-
-| Componente | Requisito mínimo |
+ 
+## Requirements
+ 
+| Component | Minimum Requirement |
 |---|---|
-| Sistema Operativo | Windows 10 / 11 |
-| Permisos | Administrador (recomendado) |
-| Instalación | Ninguna |
-| Dependencias | Ninguna |
-
+| Operating System | Windows 10 / 11 |
+| Permissions | Administrator (recommended) |
+| Installation | None |
+| Dependencies | None |
+ 
 ---
-
-## Uso
-
-1. Descarga el archivo `.exe` desde la sección [Releases](../../releases).
-2. Haz clic derecho y selecciona **Ejecutar como administrador**.
-3. Elige tu modo:
-   - `[1]` Borrado manual con explicación
-   - `[2]` Limpieza inteligente automática
-4. Sigue las instrucciones en pantalla.
-
+ 
+## Usage
+ 
+1. Download the `.exe` file from the [Releases](../../releases) section.
+2. Right-click and select **Run as administrator**.
+3. Choose your mode:
+   - `[1]` Manual termination with explanation
+   - `[2]` Smart automatic cleanup
+4. Follow the on-screen instructions.
 ---
-
-## Autor
-
+ 
+## Author
+ 
 **Nox** · [@nostraxiten](https://github.com/nostraxiten)
-
-
